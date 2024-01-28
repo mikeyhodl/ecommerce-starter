@@ -18,7 +18,7 @@ export interface Category {
 }
 
 export async function fetchData(): Promise<Product[]> {
-  const response = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=8&categoryId=3");
+  const response = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=8&categoryId=5");
   return response.json();
 }
 
