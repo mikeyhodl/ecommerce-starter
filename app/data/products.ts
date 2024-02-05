@@ -18,12 +18,12 @@ export interface Category {
 }
 
 export async function fetchData(): Promise<Product[]> {
-  const response = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=8&categoryId=5");
+  const response = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=8&categoryId=1");
   return response.json();
 }
 
 export async function fetchYouMightLike(): Promise<Product[]> {
-  const response = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=4&categoryId=2");
+  const response = await fetch("https://api.escuelajs.co/api/v1/products?offset=0&limit=4&categoryId=1");
   return response.json();
 }
 
